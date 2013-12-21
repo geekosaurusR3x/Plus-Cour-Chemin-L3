@@ -1,0 +1,22 @@
+typedef struct tas {
+		struct tas *_min;
+		struct tas *_tas;
+		Noeud *_table_hash;
+		int nb;
+}TTas, *Tas;
+
+typedef struct A
+{
+	struct A *_pere;
+	struct A *_FG;
+	struct A *_FD;
+	int _num_pere,degre,_num_sommet;
+	double _poids;
+}Arbre, *Noeud;
+
+Table TableHachage(int nb)
+{
+	Table *Hach;
+	Hach = (Table)malloc(sizeof(TTas));
+
+Voila la structure du tas
